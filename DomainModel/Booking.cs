@@ -25,6 +25,7 @@ namespace DomainModel
 
         [Range(0d, double.MaxValue)]
         [Required]
+        [Column(TypeName = "decimal(5,2)")]
         public decimal Price { get; set; }
 
         [Required]

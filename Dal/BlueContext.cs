@@ -11,6 +11,7 @@ namespace Dal
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Hotel> Hotels { get; set; }
         public DbSet<Room> Rooms { get; set; }
+        public DbSet<BookingRoom> BookingRooms { get; set; }
 
         public BlueContext()
             : base()

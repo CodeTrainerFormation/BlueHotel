@@ -27,8 +27,14 @@ namespace DomainModel
         [Required]
         public string Country { get; set; }
 
+        /// <summary>
+        /// range of -90 à 90 
+        /// </summary>
         public double? Latitude { get; set; }
 
+        /// <summary>
+        /// range of -180 à 180
+        /// </summary>
         public double? Longitude { get; set; }
 
         [Required]

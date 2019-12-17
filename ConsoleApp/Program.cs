@@ -10,6 +10,7 @@ namespace ConsoleApp
         {
             using (BlueContext context = new BlueContext())
             {
+                context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
 
                 var bookings = context.Bookings.ToList();

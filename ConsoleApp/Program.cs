@@ -13,7 +13,7 @@ namespace ConsoleApp
                 context.Database.EnsureDeleted();
                 context.Database.EnsureCreated();
 
-                var bookings = context.Bookings.ToList();
+                var customers = context.Customers.ToList();
             }
 
             Console.WriteLine("Oki");

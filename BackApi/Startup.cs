@@ -44,6 +44,20 @@ namespace BackApi
 
             ////1 instance par appel
             //services.AddTransient<IBlueContext, BlueContext>();
+
+            services.AddCors(setup =>
+            {
+                setup.AddDefaultPolicy(builder =>
+                {
+                    //for example in production
+                    //builder.WithOrigins("http://localhost:4200/"); 
+
+                    //for example in development
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +67,8 @@ namespace BackApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors();
 
             app.UseHttpsRedirection();
 

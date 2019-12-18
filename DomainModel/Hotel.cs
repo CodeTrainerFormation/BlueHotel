@@ -20,7 +20,7 @@ namespace DomainModel
         public int Star { get; set; }
 
         //propriétés de navigations
-        [Required]
+        //[Required]
         public virtual Address Address { get; set; }
         public virtual ICollection<Room> Rooms { get; set; }
     }

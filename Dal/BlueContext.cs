@@ -25,6 +25,7 @@ namespace Dal
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //only mandatory for ConsoleApp
             //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb; Initial Catalog=BlueDb; Integrated Security=true");
 
             base.OnConfiguring(optionsBuilder);

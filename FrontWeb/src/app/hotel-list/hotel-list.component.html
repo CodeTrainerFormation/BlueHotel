@@ -1,7 +1,15 @@
 <h2>Hotels</h2>
 
+<div>
+    <button (click)="addHotel()">
+        Add an hotel
+    </button>
+</div>
+
 <ul>
     <li *ngFor="let hotel of hotels">
+        <button (click)="updateHotel(hotel)" >Update</button>
+        <button (click)="deleteHotel(hotel)" >Delete</button>
         {{hotel.hotelId}}: {{hotel.name}} ({{hotel.star}} stars)
     </li>
 </ul>

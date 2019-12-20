@@ -28,6 +28,8 @@ namespace Dal
             //only mandatory for ConsoleApp
             //optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb; Initial Catalog=BlueDb; Integrated Security=true");
 
+            //optionsBuilder.UseSqlServer(@"Server=tcp:{your-database}.database.windows.net,1433;Initial Catalog=BlueDb;Persist Security Info=False;User ID={your-login};Password={your-password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
             base.OnConfiguring(optionsBuilder);
         }
 

@@ -9,7 +9,7 @@ import { Hotel } from './model/hotel';
 })
 export class HotelService {
 
-  private apiUrl = 'https://localhost:44390/api/hotels';
+  private apiUrl = 'https://bluehotelnab.azurewebsites.net/api/hotels';
   private httpOptions = {
     headers: new HttpHeaders({'content-type': 'application/json'})
   };
